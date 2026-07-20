@@ -38,7 +38,7 @@ const plans = [
     },
     images: [
       "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784570477719-drirzw43.jpg",
-      "https://images.unsplash.com/photo-1541888081622-1cb46598c94e?q=80&w=2070&auto=format&fit=crop",
+      "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784570552287-d1vb9obf.jpg",
       "https://images.unsplash.com/photo-1504307651254-35680f356f58?q=80&w=2070&auto=format&fit=crop"
     ]
   }
