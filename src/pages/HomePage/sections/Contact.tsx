@@ -13,7 +13,7 @@ export default function ContactSection(): React.JSX.Element {
           tag="Ready to build?"
           text="Start your next project with Guanaja's most trusted partner. Get your material estimate or book your construction consultation today."
           primaryButton={{
-            text: "Start Now",
+            text: "Contact Us",
             href: "#",
           }}
           secondaryButton={{
