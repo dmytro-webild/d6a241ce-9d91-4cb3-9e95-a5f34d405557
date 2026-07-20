@@ -21,7 +21,7 @@ export default function HeroSection(): React.JSX.Element {
             text: "View Materials",
             href: "#materials",
           }}
-          imageSrc="http://img.b2bpic.net/free-photo/tools-clay-work-sculpting_23-2149986247.jpg?_wi=1"
+          imageSrc="https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784581063449-u0ny9odg.jpg"
           textAnimation="fade-blur"
         />
         </SectionErrorBoundary>
