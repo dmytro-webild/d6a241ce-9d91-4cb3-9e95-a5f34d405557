@@ -44,7 +44,7 @@ export default function Layout() {
       <SiteBackgroundSlot />
       <SectionErrorBoundary name="navbar">
         <NavbarInline
-      logo="GuanajaBuild"
+      logo="Constructora Powery"
       ctaButton={{
         text: "Get a Quote",
         href: "#contact",
@@ -56,7 +56,7 @@ export default function Layout() {
       </main>
       <SectionErrorBoundary name="footer">
         <FooterSimpleMedia
-      brand="GuanajaBuild"
+      brand="Constructora Powery"
       columns={[
         {
           title: "Company",
@@ -93,7 +93,7 @@ export default function Layout() {
           ],
         },
       ]}
-      copyright="© 2024 GuanajaBuild Construction. All rights reserved."
+      copyright="© 2024 Constructora Powery Construction. All rights reserved."
       links={[
         {
           label: "Privacy Policy",
