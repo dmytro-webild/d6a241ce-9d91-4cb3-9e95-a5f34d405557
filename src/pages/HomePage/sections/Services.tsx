@@ -21,7 +21,11 @@ const plans = [
       text: "Book Session",
       href: "#contact"
     },
-    imageSrc: "http://img.b2bpic.net/free-photo/architects-looking-plan-front-house_23-2147813107.jpg"
+    images: [
+      "http://img.b2bpic.net/free-photo/architects-looking-plan-front-house_23-2147813107.jpg",
+      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2831&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1541888086425-d81bb19240f5?q=80&w=2940&auto=format&fit=crop"
+    ]
   },
   {
     tag: "Fast",
