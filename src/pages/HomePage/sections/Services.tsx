@@ -24,7 +24,7 @@ const plans = [
     images: [
       "http://img.b2bpic.net/free-photo/architects-looking-plan-front-house_23-2147813107.jpg",
       "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2831&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1541888086425-d81bb19240f5?q=80&w=2940&auto=format&fit=crop"
+      "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784570870223-928fru2r.jpg"
     ]
   },
   {
