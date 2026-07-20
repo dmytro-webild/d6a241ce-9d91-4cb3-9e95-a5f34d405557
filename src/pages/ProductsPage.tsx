@@ -1,108 +1,18 @@
-import { routes } from "@/routes";
-import NavbarCentered from "@/components/ui/NavbarCentered";
-import HeroBillboard from "@/components/sections/hero/HeroBillboard";
-import FeaturesMediaCards from "@/components/sections/features/FeaturesMediaCards";
-import ContactCta from "@/components/sections/contact/ContactCta";
-import FooterSimple from "@/components/sections/footer/FooterSimple";
+import Button from "@/components/ui/Button";
+import TextAnimation from "@/components/ui/TextAnimation";
+import ImageOrVideo from "@/components/ui/ImageOrVideo";
+import GridOrCarousel from "@/components/ui/GridOrCarousel";
+import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export default function ProductsPage() {
   return (
-    <div className="min-h-screen bg-background text-foreground flex flex-col">
-      <NavbarCentered
-        logo="BuildSupply"
-        navItems={routes.map((r) => ({ name: r.label, href: r.path }))}
-        ctaButton={{ text: "Get a Quote", href: "/contact" }}
-      />
-
-      <main className="flex-grow">
-        <HeroBillboard
-          tag="Our Catalog"
-          title="Professional Grade Materials"
-          description="From heavy-duty structural fasteners to everyday hand tools, explore our comprehensive range of high-quality building supplies designed for professionals and DIYers alike."
-          primaryButton={{ text: "Browse Categories", href: "#categories" }}
-          secondaryButton={{ text: "Download Catalog", href: "#" }}
-          imageSrc="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?q=80&w=2070&auto=format&fit=crop"
-          textAnimation="fade-blur"
-        />
-
-        <div id="categories">
-          <FeaturesMediaCards
-            tag="Inventory"
-            title="Shop by Category"
-            description="Find exactly what you need for your next project, organized for quick and easy sourcing."
-            items={[
-              {
-                title: "Screws & Nails",
-                description: "Essential fasteners for joining wood, metal, and drywall securely.",
-                imageSrc: "https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?q=80&w=800&auto=format&fit=crop"
-              },
-              {
-                title: "Bolts & Nuts",
-                description: "Heavy-duty fasteners engineered for structural integrity and high load capacity.",
-                imageSrc: "https://images.unsplash.com/photo-1530982011887-3cc11cc85693?q=80&w=800&auto=format&fit=crop"
-              },
-              {
-                title: "Wall Anchors",
-                description: "Reliable mounting solutions specifically designed for hollow drywall and masonry.",
-                imageSrc: "https://images.unsplash.com/photo-1572981779307-38b8cabb2407?q=80&w=800&auto=format&fit=crop"
-              },
-              {
-                title: "Washers",
-                description: "Precision-stamped washers for optimal load distribution and surface protection.",
-                imageSrc: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800&auto=format&fit=crop"
-              },
-              {
-                title: "Everyday Tools & Safety",
-                description: "Professional hand tools, measuring devices, cutting equipment, and safety gear.",
-                imageSrc: "https://images.unsplash.com/photo-1581147036324-c17771fd8ac6?q=80&w=800&auto=format&fit=crop"
-              },
-              {
-                title: "Plumbing & Electrical",
-                description: "Durable pipes, fittings, specialized tapes, and essential electrical components.",
-                imageSrc: "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?q=80&w=800&auto=format&fit=crop"
-              },
-              {
-                title: "Adhesives & Sealants",
-                description: "Industrial-strength glue, weather-resistant sealants, and mechanical lubricants.",
-                imageSrc: "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?q=80&w=800&auto=format&fit=crop"
-              },
-              {
-                title: "Building Materials & Hardware",
-                description: "Premium timber, boards, door/window hardware, heavy chain, and wire.",
-                imageSrc: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop"
-              }
-            ]}
-            textAnimation="fade-blur"
-          />
-        </div>
-
-        <ContactCta
-          tag="Bulk Orders"
-          text="Need materials for a large commercial project?"
-          primaryButton={{ text: "Contact Sales", href: "/contact" }}
-          secondaryButton={{ text: "View Pricing Tiers", href: "/pricing" }}
-          textAnimation="fade-blur"
-        />
-      </main>
-
-      <FooterSimple
-        brand="BuildSupply"
-        columns={[
-          {
-            title: "Products",
-            items: [
-              { label: "Fasteners", href: "#" },
-              { label: "Tools", href: "#" },
-              { label: "Materials", href: "#" }
-            ]
-          }
-        ]}
-        copyright="© 2024 BuildSupply Inc. All rights reserved."
-        links={[
-          { label: "Terms of Service", href: "#" },
-          { label: "Privacy Policy", href: "#" }
-        ]}
-      />
-    </div>
+    <>
+      <div data-webild-section="FeaturesMediaCards"><section aria-label="Features section" className="py-20"><div className="flex flex-col gap-8 md:gap-10"><div className="flex flex-col items-center w-content-width mx-auto gap-2"><div className="px-3 py-1 mb-1 text-sm card rounded w-fit"><p>Product Catalog</p></div><TextAnimation text="Professional Building Materials" variant="fade-blur" gradientText={true} tag="h2" className="md:max-w-8/10 text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance" /><TextAnimation text="Browse our comprehensive selection of high-quality tools, fasteners, and building materials designed for contractors and DIY builders." variant="fade-blur" gradientText={false} tag="p" className="md:max-w-7/10 text-lg md:text-xl leading-snug text-center text-balance" /><div className="flex flex-wrap justify-center gap-3 mt-2 md:mt-3"><Button text="View Full Catalog" href="/catalog" variant="primary" /><Button variant="secondary" animationDelay={0.1} /></div></div><ScrollReveal variant="fade"><GridOrCarousel><div key="Screws, Nails & Anchors" className="flex flex-col gap-3 xl:gap-3.5 2xl:gap-4 p-3 xl:p-3.5 2xl:p-4 h-full card rounded"><div className="aspect-square rounded overflow-hidden button-secondary shadow shadow-foreground/5"><ImageOrVideo imageSrc="https://img.freepik.com/free-photo/pile-metal-screws-nails-hardware-tools_23-2148293310.jpg" /></div><div className="flex flex-col gap-1 p-3 xl:p-3.5 2xl:p-4"><h3 className="text-2xl font-semibold leading-snug">Screws, Nails & Anchors</h3><p className="text-base leading-snug">Reliable fasteners for joining wood, metal, and securing hollow drywall.</p></div></div>
+<div key="Bolts, Nuts & Washers" className="flex flex-col gap-3 xl:gap-3.5 2xl:gap-4 p-3 xl:p-3.5 2xl:p-4 h-full card rounded"><div className="aspect-square rounded overflow-hidden button-secondary shadow shadow-foreground/5"><ImageOrVideo imageSrc="https://img.freepik.com/free-photo/nuts-bolts-close-up-background_23-2148293321.jpg" /></div><div className="flex flex-col gap-1 p-3 xl:p-3.5 2xl:p-4"><h3 className="text-2xl font-semibold leading-snug">Bolts, Nuts & Washers</h3><p className="text-base leading-snug">Heavy-duty fasteners and washers for secure load distribution in structural builds.</p></div></div>
+<div key="Everyday Tools & Safety" className="flex flex-col gap-3 xl:gap-3.5 2xl:gap-4 p-3 xl:p-3.5 2xl:p-4 h-full card rounded"><div className="aspect-square rounded overflow-hidden button-secondary shadow shadow-foreground/5"><ImageOrVideo imageSrc="https://img.freepik.com/free-photo/construction-tools-yellow-helmet-blue-background_23-2148293332.jpg" /></div><div className="flex flex-col gap-1 p-3 xl:p-3.5 2xl:p-4"><h3 className="text-2xl font-semibold leading-snug">Everyday Tools & Safety</h3><p className="text-base leading-snug">Essential hand tools, measuring equipment, and protective safety gear.</p></div></div>
+<div key="Plumbing & Electrical" className="flex flex-col gap-3 xl:gap-3.5 2xl:gap-4 p-3 xl:p-3.5 2xl:p-4 h-full card rounded"><div className="aspect-square rounded overflow-hidden button-secondary shadow shadow-foreground/5"><ImageOrVideo imageSrc="https://img.freepik.com/free-photo/plumbing-tools-pipes-white-background_23-2148293343.jpg" /></div><div className="flex flex-col gap-1 p-3 xl:p-3.5 2xl:p-4"><h3 className="text-2xl font-semibold leading-snug">Plumbing & Electrical</h3><p className="text-base leading-snug">Pipes, fittings, electrical components, and specialty tapes for utility work.</p></div></div>
+<div key="Adhesives & Sealants" className="flex flex-col gap-3 xl:gap-3.5 2xl:gap-4 p-3 xl:p-3.5 2xl:p-4 h-full card rounded"><div className="aspect-square rounded overflow-hidden button-secondary shadow shadow-foreground/5"><ImageOrVideo imageSrc="https://img.freepik.com/free-photo/silicone-sealant-gun-construction-site_23-2148293354.jpg" /></div><div className="flex flex-col gap-1 p-3 xl:p-3.5 2xl:p-4"><h3 className="text-2xl font-semibold leading-snug">Adhesives & Sealants</h3><p className="text-base leading-snug">Industrial-grade glues, waterproof sealants, and mechanical lubricants.</p></div></div>
+<div key="Building Materials" className="flex flex-col gap-3 xl:gap-3.5 2xl:gap-4 p-3 xl:p-3.5 2xl:p-4 h-full card rounded"><div className="aspect-square rounded overflow-hidden button-secondary shadow shadow-foreground/5"><ImageOrVideo imageSrc="https://img.freepik.com/free-photo/wooden-boards-lumber-construction-materials_23-2148293365.jpg" /></div><div className="flex flex-col gap-1 p-3 xl:p-3.5 2xl:p-4"><h3 className="text-2xl font-semibold leading-snug">Building Materials</h3><p className="text-base leading-snug">Timber, boards, door hardware, and heavy-duty chain and wire.</p></div></div></GridOrCarousel></ScrollReveal></div></section></div>
+    </>
   );
 }
