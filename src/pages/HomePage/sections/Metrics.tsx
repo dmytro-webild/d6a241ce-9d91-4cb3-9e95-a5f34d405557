@@ -18,17 +18,17 @@ export default function MetricsSection(): React.JSX.Element {
             {
               icon: Wrench,
               title: "Successful Builds",
-              value: "150+",
+              value: "15+",
             },
             {
               icon: Truck,
               title: "Deliveries Completed",
-              value: "2k+",
+              value: "10k+",
             },
             {
               icon: Users,
               title: "Local Clients",
-              value: "150+",
+              value: "15+",
             },
           ]}
           textAnimation="slide-up"
