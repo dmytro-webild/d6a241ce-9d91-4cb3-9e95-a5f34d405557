@@ -3,12 +3,14 @@ import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
 
 import ButtonsPage from "@/pages/ButtonsPage";
+import ProductsPage from "@/pages/ProductsPage";
 export default function App() {
   return (
     <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<HomePage />} />
         <Route path="/buttons" element={<ButtonsPage />} />
+        <Route path="/products" element={<ProductsPage />} />
       </Route>
     </Routes>
   );

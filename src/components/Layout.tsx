@@ -36,6 +36,8 @@ export default function Layout() {
     "href": "#contact"
   },
   { name: "Buttons", href: "/buttons" },
+  { name: "Products", href: "/products" },
+
 
 ];
 
