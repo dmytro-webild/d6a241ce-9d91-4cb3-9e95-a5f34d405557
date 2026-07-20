@@ -41,7 +41,7 @@ const plans = [
       href: "#contact"
     },
     images: [
-      "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784570477719-drirzw43.jpg",
+      "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784571552622-4h7n3dxo.jpg",
       "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784570552287-d1vb9obf.jpg",
       "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784570590381-24ab9aw3.jpg"
     ]
