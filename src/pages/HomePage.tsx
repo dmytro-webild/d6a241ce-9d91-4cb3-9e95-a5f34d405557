@@ -15,7 +15,7 @@ export default function HomePage() {
     <SectionErrorBoundary name="hero">
           <HeroOverlay
       tag="Guanaja's Trusted Supplier"
-      title="Guanaja's Premier Hardware & Construction Partner"
+      title="Powery & Asociados "
       description="Supplying the island with top-quality wood, concrete, roofing, and daily essentials while offering expert residential construction services to build your home from the ground up—reliable, locally stocked, and built for the island climate."
       primaryButton={{
         text: "Request a Quote",
