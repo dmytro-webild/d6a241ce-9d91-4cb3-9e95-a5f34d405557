@@ -28,7 +28,7 @@ export default function MetricsSection(): React.JSX.Element {
             {
               icon: Users,
               title: "Local Clients",
-              value: "800+",
+              value: "150+",
             },
           ]}
           textAnimation="slide-up"
