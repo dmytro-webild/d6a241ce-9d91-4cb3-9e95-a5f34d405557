@@ -21,11 +21,7 @@ const plans = [
       text: "Book Session",
       href: "#contact"
     },
-    images: [
-      "http://img.b2bpic.net/free-photo/architects-looking-plan-front-house_23-2147813107.jpg",
-      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2831&auto=format&fit=crop",
-      "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784570870223-928fru2r.jpg"
-    ]
+    imageSrc: "http://img.b2bpic.net/free-photo/architects-looking-plan-front-house_23-2147813107.jpg"
   },
   {
     tag: "Fast",
@@ -41,9 +37,9 @@ const plans = [
       href: "#contact"
     },
     images: [
-      "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784570477719-drirzw43.jpg",
-      "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784570552287-d1vb9obf.jpg",
-      "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784570590381-24ab9aw3.jpg"
+      "http://img.b2bpic.net/free-photo/waibaidu-bridge-shanghai_1359-928.jpg",
+      "https://images.unsplash.com/photo-1541888081622-1cb46598c94e?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1504307651254-35680f356f58?q=80&w=2070&auto=format&fit=crop"
     ]
   }
 ];
