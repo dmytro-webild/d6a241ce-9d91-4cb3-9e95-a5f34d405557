@@ -102,7 +102,7 @@ export default function Layout() {
           href: "#",
         },
       ]}
-      imageSrc="http://img.b2bpic.net/free-photo/tools-clay-work-sculpting_23-2149986247.jpg"
+      imageSrc="http://img.b2bpic.net/free-photo/tools-clay-work-sculpting_23-2149986247.jpg?_wi=2"
     />
       </SectionErrorBoundary>
     </StyleProvider>

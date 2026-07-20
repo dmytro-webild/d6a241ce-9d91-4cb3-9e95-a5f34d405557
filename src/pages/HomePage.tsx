@@ -25,7 +25,7 @@ export default function HomePage() {
         text: "View Materials",
         href: "#materials",
       }}
-      imageSrc="http://img.b2bpic.net/free-photo/tools-clay-work-sculpting_23-2149986247.jpg"
+      imageSrc="http://img.b2bpic.net/free-photo/tools-clay-work-sculpting_23-2149986247.jpg?_wi=1"
       textAnimation="fade-blur"
     />
     </SectionErrorBoundary>
