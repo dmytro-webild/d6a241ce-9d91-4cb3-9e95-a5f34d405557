@@ -40,15 +40,15 @@ export default function Layout() {
           items: [
             {
               label: "About Us",
-              href: "#",
+              href: "/about",
             },
             {
               label: "Materials",
-              href: "#materials",
+              href: "/#materials",
             },
             {
               label: "Services",
-              href: "#services",
+              href: "/#services",
             },
           ],
         },
