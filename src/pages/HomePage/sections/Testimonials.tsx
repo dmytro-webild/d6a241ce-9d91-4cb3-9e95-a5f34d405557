@@ -33,7 +33,7 @@ export default function TestimonialsSection(): React.JSX.Element {
               role: "Architect",
               company: "Floor Plans & 3D Designs",
               rating: 5,
-              imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784655095378-hhydm8se.jpg",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784654034539-24t2owe5.jpg",
             },
             {
               name: "Marcus V.",
