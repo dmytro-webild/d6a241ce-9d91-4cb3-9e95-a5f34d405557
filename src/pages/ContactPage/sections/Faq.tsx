@@ -6,7 +6,7 @@ import FaqSimple from "@/components/sections/faq/FaqSimple";
 
 export default function FaqSection(): React.JSX.Element {
   return (
-    <div id="faq" data-section="faq" className="hidden">
+    <div id="faq" data-section="faq">
       <FaqSimple
               tag="Support"
               title="Frequently Asked Questions"
