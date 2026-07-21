@@ -29,9 +29,9 @@ export default function TestimonialsSection(): React.JSX.Element {
               imageSrc: "http://img.b2bpic.net/free-photo/architect-smiling-safety-equipment_23-2148242954.jpg",
             },
             {
-              name: "Elena R.",
+              name: "Jake Ebanks",
               role: "Architect",
-              company: "Custom Designs",
+              company: "Floor Plans & 3D Designs",
               rating: 5,
               imageSrc: "http://img.b2bpic.net/free-photo/close-up-back-view-engineer-architect-supervising-construction_23-2148233787.jpg",
             },
