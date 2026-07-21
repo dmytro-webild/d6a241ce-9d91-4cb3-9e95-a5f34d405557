@@ -39,6 +39,10 @@ export default function Layout() {
           title: "Information",
           items: [
             {
+              label: "About Us",
+              href: "/about",
+            },
+            {
               label: "Materials",
               href: "/#materials",
             },
