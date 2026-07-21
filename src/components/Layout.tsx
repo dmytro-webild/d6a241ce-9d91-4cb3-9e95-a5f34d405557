@@ -12,6 +12,8 @@ export default function Layout() {
     "href": "/contact"
   },
   { name: "Products", href: "/products" },
+  { name: "About", href: "/about" },
+
 ];
 
   return (
