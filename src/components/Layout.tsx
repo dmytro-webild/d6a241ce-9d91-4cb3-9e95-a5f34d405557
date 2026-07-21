@@ -69,16 +69,16 @@ export default function Layout() {
           title: "Connect",
           items: [
             {
-              label: "dmem26@yahoo.com",
+              label: "Email Us",
               href: "mailto:dmem26@yahoo.com",
             },
             {
               label: "Facebook",
-              href: "https://facebook.com",
+              href: "https://www.facebook.com/people/Powery-Asociados/100057586744541/?sk=photos",
             },
             {
               label: "Instagram",
-              href: "https://instagram.com",
+              href: "https://www.instagram.com/poweryyasociados/",
             },
           ],
         },
