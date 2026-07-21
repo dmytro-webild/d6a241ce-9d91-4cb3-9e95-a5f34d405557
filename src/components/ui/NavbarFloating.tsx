@@ -97,7 +97,7 @@ const NavbarFloating = ({ logo, navItems, ctaButton }: NavbarFloatingProps) => {
                       <div key={item.name}>
                         <a
                           href={item.href}
-                          onClick={(e) => handleNavClick(e, item.href, () => setMenuOpen(false))}
+                          onClick={(e) => handleNavClick(e, item.href)}
                           className="group flex items-center justify-between py-3 w-full"
                         >
                           <span className="text-xl md:text-2xl font-medium text-foreground group-hover:ml-3 transition-[margin] duration-300">
