@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { Plus, ArrowUpRight } from "lucide-react";
 import { cls } from "@/lib/utils";
 import Button from "@/components/ui/Button";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 interface NavbarFloatingProps {
   logo: string;
@@ -10,17 +11,10 @@ interface NavbarFloatingProps {
   ctaButton: { text: string; href: string };
 }
 
-const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string, onClose?: () => void) => {
-  if (href.startsWith("#")) {
-    e.preventDefault();
-    const element = document.getElementById(href.slice(1));
-    element?.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
-  onClose?.();
-};
-
 const NavbarFloating = ({ logo, navItems, ctaButton }: NavbarFloatingProps) => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -29,6 +23,30 @@ const NavbarFloating = ({ logo, navItems, ctaButton }: NavbarFloatingProps) => {
     document.addEventListener("keydown", handleKeyDown);
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, [menuOpen]);
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (href.startsWith("/#")) {
+      e.preventDefault();
+      const targetId = href.slice(2);
+      if (location.pathname !== "/") {
+        navigate("/");
+        setTimeout(() => {
+          const element = document.getElementById(targetId);
+          element?.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 100);
+      } else {
+        const element = document.getElementById(targetId);
+        element?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    } else if (href.startsWith("#")) {
+      e.preventDefault();
+      const element = document.getElementById(href.slice(1));
+      element?.scrollIntoView({ behavior: "smooth", block: "start" });
+    } else if (href === "/contact") {
+      window.scrollTo(0, 0);
+    }
+    setMenuOpen(false);
+  };
 
   return (
     <>
@@ -79,7 +97,7 @@ const NavbarFloating = ({ logo, navItems, ctaButton }: NavbarFloatingProps) => {
                       <div key={item.name}>
                         <a
                           href={item.href}
-                          onClick={(e) => handleNavClick(e, item.href, () => setMenuOpen(false))}
+                          onClick={(e) => handleNavClick(e, item.href)}
                           className="group flex items-center justify-between py-3 w-full"
                         >
                           <span className="text-xl md:text-2xl font-medium text-foreground group-hover:ml-3 transition-[margin] duration-300">
