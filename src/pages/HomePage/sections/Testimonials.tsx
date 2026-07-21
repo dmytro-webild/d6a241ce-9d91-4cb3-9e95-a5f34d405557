@@ -16,7 +16,7 @@ const testimonials = [
     imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784656555315-5yajanq0.webp"
   },
   {
-    name: " Guanaja del Este",
+    name: " Hotel Hotel Guanaja del Este",
     role: "",
     company: "Eco‑style hotel",
     rating: 5,
