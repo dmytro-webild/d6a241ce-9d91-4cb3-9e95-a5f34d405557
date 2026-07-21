@@ -71,24 +71,9 @@ const FooterSimpleMedia = ({
               {columns.map((column) => (
                 <div key={column.title} className="w-1/2 md:w-auto flex flex-col items-start gap-3">
                   <h3 className="text-sm opacity-50 truncate">{column.title}</h3>
-                  {column.title === "Connect" ? (
-                    <div className="flex flex-col md:flex-row gap-3">
-                      {column.items.map((item) => (
-                        <Button
-                          key={item.label}
-                          text={item.label}
-                          href={item.href}
-                          onClick={item.onClick}
-                          variant="secondary"
-                          className="w-full md:w-auto"
-                        />
-                      ))}
-                    </div>
-                  ) : (
-                    column.items.map((item) => (
-                      <FooterLinkItem key={item.label} label={item.label} href={item.href} onClick={item.onClick} />
-                    ))
-                  )}
+                  {column.items.map((item) => (
+                    <FooterLinkItem key={item.label} label={item.label} href={item.href} onClick={item.onClick} />
+                  ))}
                 </div>
               ))}
             </div>
