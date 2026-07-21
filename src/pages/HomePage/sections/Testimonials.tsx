@@ -43,11 +43,11 @@ export default function TestimonialsSection(): React.JSX.Element {
               imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784656382248-xcpikcez.webp",
             },
             {
-              name: "Julia P.",
+              name: "Clarks cay",
               role: "Business",
-              company: "Sandy Bay",
+              company: "Boutique private island resort",
               rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/nature-landscape-hawaii-with-digital-art-style_23-2151793616.jpg",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784656894307-18nismk1.jpg",
             },
           ]}
           textAnimation="fade-blur"
