@@ -34,7 +34,7 @@ export default function Layout() {
       brand="Powery & Asociados"
       columns={[
         {
-          title: "Hotel-Resort",
+          title: "Information",
           items: [
             {
               label: "About Us",
