@@ -10,14 +10,14 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 const testimonials = [
   {
     name: "Dunbar Rock ",
-    role: "Business",
-    company: "Eco‑tourism and hospitality business",
+    role: "Eco‑tourism hotel",
+    company: "Eco‑tourism and hospitality ",
     rating: 5,
     imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784656555315-5yajanq0.webp"
   },
   {
-    name: "Business Guanaja del Este",
-    role: "Business",
+    name: "Eco‑tourism hotel Guanaja del Este",
+    role: "Eco‑tourism hotel",
     company: "Eco‑style hotel",
     rating: 5,
     imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784657458455-k96omc6a.png"
@@ -31,22 +31,22 @@ const testimonials = [
   },
   {
     name: "Fly Fish guanaja",
-    role: "Business",
-    company: "Eco‑tourism and hospitality business",
+    role: "Eco‑tourism hotel",
+    company: "Eco‑tourism and hospitality ",
     rating: 5,
     imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784656382248-xcpikcez.webp"
   },
   {
     name: "Clarks cay",
-    role: "Business",
+    role: "Eco‑tourism hotel",
     company: "Boutique private island resort",
     rating: 5,
     imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784656894307-18nismk1.jpg"
   },
   {
     name: "Grahams Place",
-    role: "Business",
-    company: "Business",
+    role: "Eco‑tourism hotel",
+    company: "Eco‑tourism hotel",
     rating: 5,
     imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784657310154-lqtvnaz9.png"
   }
