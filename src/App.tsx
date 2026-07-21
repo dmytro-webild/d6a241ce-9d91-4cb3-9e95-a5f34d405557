@@ -6,6 +6,7 @@ import ButtonsPage from "@/pages/ButtonsPage";
 import ProductsPage from "@/pages/ProductsPage";
 import ContactPage from "@/pages/ContactPage";
 import AboutPage from "@/pages/AboutPage";
+import TeamMemberDetailPage from './pages/TeamMemberDetailPage';
 export default function App() {
   return (
     <Routes>
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/about" element={<AboutPage />} />
       </Route>
+          <Route path="/team/:slug" element={<TeamMemberDetailPage />} />
     </Routes>
   );
 }
