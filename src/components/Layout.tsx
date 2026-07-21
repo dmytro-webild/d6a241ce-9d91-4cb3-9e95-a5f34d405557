@@ -66,8 +66,12 @@ export default function Layout() {
           ],
         },
         {
-          title: "Connect",
+          title: "Connect ",
           items: [
+            {
+              label: "+504 97276474",
+              href: "https://wa.me/50497276474",
+            },
             {
               label: "Email Us",
               href: "mailto:dmem26@yahoo.com",
