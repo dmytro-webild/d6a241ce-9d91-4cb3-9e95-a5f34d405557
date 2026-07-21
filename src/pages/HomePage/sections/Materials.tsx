@@ -15,7 +15,7 @@ const items = [
   {
     title: "Concrete & Aggregates",
     description: "Sand, gravel, and high-strength concrete.",
-    imageSrc: "http://img.b2bpic.net/free-photo/top-view-clay-smudge_23-2148862856.jpg"
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784645129490-cx7jmuje.avif"
   },
   {
     title: "Roofing Systems",
