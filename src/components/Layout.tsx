@@ -59,10 +59,7 @@ export default function Layout() {
               label: "Contact",
               href: "#contact",
             },
-            {
-              label: "Delivery Tracking",
-              href: "#",
-            },
+
             {
               label: "FAQ",
               href: "#faq",
