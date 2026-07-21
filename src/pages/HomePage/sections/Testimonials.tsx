@@ -37,10 +37,10 @@ export default function TestimonialsSection(): React.JSX.Element {
             },
             {
               name: "Fly Fish guanaja",
-              role: "Business Owner",
-              company: "Resorts",
+              role: "Company",
+              company: "Eco‑tourism and hospitality business",
               rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/aerial-shot-beach-with-waves-from-sea-jungle-maldives_181624-3344.jpg",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784656382248-xcpikcez.webp",
             },
             {
               name: "Julia P.",
