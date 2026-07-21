@@ -34,7 +34,6 @@ const ContactInline = () => {
 
               <div className="flex flex-wrap justify-center gap-3 mt-2 md:mt-3">
                 <Button text={primaryButton.text} href={primaryButton.href} variant="primary" />
-                <Button text={secondaryButton.text} href={secondaryButton.href} variant="secondary" animationDelay={0.1} />
               </div>
             </div>
           </div>
