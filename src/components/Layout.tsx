@@ -1,5 +1,5 @@
 import FooterSimpleMedia from '@/components/sections/footer/FooterSimpleMedia';
-import NavbarInline from '@/components/ui/NavbarInline';
+import NavbarFloating from '@/components/ui/NavbarFloating';
 import SectionErrorBoundary from "@/components/ui/SectionErrorBoundary";
 import SiteBackgroundSlot from "@/components/ui/SiteBackgroundSlot";
 import { Outlet } from 'react-router-dom';
@@ -41,7 +41,7 @@ export default function Layout() {
     <StyleProvider buttonVariant="bubble" siteBackground="floatingGradient" heroBackground="gradientBars">
       <SiteBackgroundSlot />
       <SectionErrorBoundary name="navbar">
-        <NavbarInline
+        <NavbarFloating
       logo="Constructora Powery"
       ctaButton={{
         text: "Get a Quote",
