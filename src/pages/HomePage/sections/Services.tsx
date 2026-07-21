@@ -98,9 +98,11 @@ const ServicesInline = () => (
             <div className="w-full md:w-1/2 aspect-square md:aspect-4/3 rounded overflow-hidden">
               {plan.images ? (
                 <Carousel className="w-full h-full" itemClassName="w-full h-full">
-                  {plan.images.map((src, idx) => (
-                    <ImageOrVideo key={idx} imageSrc={src} className="w-full h-full object-cover" />
-                  ))}
+                  <div className="flex w-full h-full">
+                    {plan.images.map((src, idx) => (
+                      <ImageOrVideo key={idx} imageSrc={src} className="w-1/3 h-full object-cover" />
+                    ))}
+                  </div>
                 </Carousel>
               ) : (
                 <ImageOrVideo imageSrc={plan.imageSrc} videoSrc={plan.videoSrc} className="w-full h-full object-cover" />
