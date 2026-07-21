@@ -35,17 +35,17 @@ export default function ContactSection() {
                   href="https://wa.me/50495804593"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-1/2 py-3 primary-button rounded font-medium text-center transition-colors flex items-center justify-center gap-2"
+                  className="w-full sm:w-1/2 py-3 bg-[#25D366] hover:bg-[#20b858] text-white rounded font-medium text-center transition-colors flex items-center justify-center gap-2"
                 >
-                  💬 Project Consultations
+                  Project Consultations
                 </a>
                 <a
                   href="https://wa.me/50497152117"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-1/2 py-3 secondary-button rounded font-medium text-center transition-colors flex items-center justify-center gap-2"
+                  className="w-full sm:w-1/2 py-3 bg-[#25D366] hover:bg-[#20b858] text-white rounded font-medium text-center transition-colors flex items-center justify-center gap-2"
                 >
-                  💬 Materials & General Inquiries
+                  Materials & General Inquiries
                 </a>
               </div>
             </div>
