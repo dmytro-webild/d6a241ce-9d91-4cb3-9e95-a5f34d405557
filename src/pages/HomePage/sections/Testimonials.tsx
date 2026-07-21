@@ -22,11 +22,11 @@ export default function TestimonialsSection(): React.JSX.Element {
               imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784656555315-5yajanq0.webp",
             },
             {
-              name: "David M.",
-              role: "Homeowner",
-              company: "West End",
+              name: "Hotel Guanaja del Este",
+              role: "Business",
+              company: "Eco‑style hotel",
               rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/architect-smiling-safety-equipment_23-2148242954.jpg",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784656710399-ykz6lgow.webp",
             },
             {
               name: "Jake Ebanks",
@@ -44,7 +44,7 @@ export default function TestimonialsSection(): React.JSX.Element {
             },
             {
               name: "Julia P.",
-              role: "Homeowner",
+              role: "Business",
               company: "Sandy Bay",
               rating: 5,
               imageSrc: "http://img.b2bpic.net/free-photo/nature-landscape-hawaii-with-digital-art-style_23-2151793616.jpg",
