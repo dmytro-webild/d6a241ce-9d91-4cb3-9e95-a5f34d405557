@@ -34,7 +34,7 @@ const plans = [
     features: [
       "Sand & Gravel",
       "Full Lumber loads",
-      "Priority scheduling"
+      "Cement"
     ],
     primaryButton: {
       text: "Request Delivery",
