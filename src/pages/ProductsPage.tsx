@@ -1,16 +1,18 @@
-// AUTO-GENERATED shell by per-section-migrate.
-// Section bodies live in the sibling sections/ folder (one file per section).
-// Edit those section files directly. Non-block content (wrappers,
-// non-inlinable sections) is preserved inline; extracted section blocks
-// become component refs.
+import Button from "@/components/ui/Button";
+import TextAnimation from "@/components/ui/TextAnimation";
+import ImageOrVideo from "@/components/ui/ImageOrVideo";
+import GridOrCarousel from "@/components/ui/GridOrCarousel";
+import ScrollReveal from "@/components/ui/ScrollReveal";
 
-import React from 'react';
-import FeaturesMediaCardsSection from './ProductsPage/sections/FeaturesMediaCards';
-
-export default function ProductsPage(): React.JSX.Element {
+export default function ProductsPage() {
   return (
-<>
-      <FeaturesMediaCardsSection />
+    <>
+      <div data-webild-section="FeaturesMediaCards"><section aria-label="Features section" className=""><div className="flex flex-col gap-8"><div className="flex flex-col items-center w-content-width mx-auto gap-2"><div className="px-3 py-1 mb-1 text-sm card rounded w-fit"><p>Product Catalog</p></div><TextAnimation text="Professional Building Materials" variant="fade-blur" gradientText={true} tag="h2" className="md:max-w-8/10 text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance" /><TextAnimation text="Browse our comprehensive selection of high-quality tools, fasteners, and building materials designed for contractors and DIY builders." variant="fade-blur" gradientText={false} tag="p" className="md:max-w-7/10 text-lg md:text-xl leading-snug text-center text-balance" /><div className="flex flex-wrap justify-center gap-3 mt-2 md:mt-3"><Button text="View Full Catalog" href="/catalog" variant="primary" /><Button text="Contact Us" href="#contact" variant="secondary" /></div></div><ScrollReveal variant="fade"><GridOrCarousel><div key="Screws, Nails & Anchors" className="flex flex-col gap-3 xl:gap-3.5 2xl:gap-4 p-3 xl:p-3.5 2xl:p-4 h-full card rounded"><div className="aspect-square rounded overflow-hidden button-secondary shadow shadow-foreground/5"><ImageOrVideo imageSrc="https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784575321213-ehhe5fjf.jpg" /></div><div className="flex flex-col gap-1 p-3 xl:p-3.5 2xl:p-4"><h3 className="text-2xl font-semibold leading-snug">Screws, Nails & Anchors</h3><p className="text-base leading-snug">Reliable fasteners for joining wood, metal, and securing hollow drywall.</p></div></div>
+<div key="Bolts, Nuts & Washers" className="flex flex-col gap-3 xl:gap-3.5 2xl:gap-4 p-3 xl:p-3.5 2xl:p-4 h-full card rounded"><div className="aspect-square rounded overflow-hidden button-secondary shadow shadow-foreground/5"><ImageOrVideo imageSrc="https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784575326072-giibvbu8.jpg" /></div><div className="flex flex-col gap-1 p-3 xl:p-3.5 2xl:p-4"><h3 className="text-2xl font-semibold leading-snug">Bolts, Nuts & Washers</h3><p className="text-base leading-snug">Heavy-duty fasteners and washers for secure load distribution in structural builds.</p></div></div>
+<div key="Everyday Tools & Safety" className="flex flex-col gap-3 xl:gap-3.5 2xl:gap-4 p-3 xl:p-3.5 2xl:p-4 h-full card rounded"><div className="aspect-square rounded overflow-hidden button-secondary shadow shadow-foreground/5"><ImageOrVideo imageSrc="https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784575510067-jiyv0qzq.jpg" /></div><div className="flex flex-col gap-1 p-3 xl:p-3.5 2xl:p-4"><h3 className="text-2xl font-semibold leading-snug">Everyday Tools & Safety</h3><p className="text-base leading-snug">Essential hand tools, measuring equipment, and protective safety gear.</p></div></div>
+<div key="Plumbing & Electrical" className="flex flex-col gap-3 xl:gap-3.5 2xl:gap-4 p-3 xl:p-3.5 2xl:p-4 h-full card rounded"><div className="aspect-square rounded overflow-hidden button-secondary shadow shadow-foreground/5"><ImageOrVideo imageSrc="https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784575518141-wp10pore.png" /></div><div className="flex flex-col gap-1 p-3 xl:p-3.5 2xl:p-4"><h3 className="text-2xl font-semibold leading-snug">Plumbing & Electrical</h3><p className="text-base leading-snug">Pipes, fittings, electrical components, and specialty tapes for utility work.</p></div></div>
+<div key="Adhesives & Sealants" className="flex flex-col gap-3 xl:gap-3.5 2xl:gap-4 p-3 xl:p-3.5 2xl:p-4 h-full card rounded"><div className="aspect-square rounded overflow-hidden button-secondary shadow shadow-foreground/5"><ImageOrVideo imageSrc="https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784575612526-w177dnjo.jpg" /></div><div className="flex flex-col gap-1 p-3 xl:p-3.5 2xl:p-4"><h3 className="text-2xl font-semibold leading-snug">Adhesives & Sealants</h3><p className="text-base leading-snug">Industrial-grade glues, waterproof sealants, and mechanical lubricants.</p></div></div>
+<div key="Building Materials" className="flex flex-col gap-3 xl:gap-3.5 2xl:gap-4 p-3 xl:p-3.5 2xl:p-4 h-full card rounded"><div className="aspect-square rounded overflow-hidden button-secondary shadow shadow-foreground/5"><ImageOrVideo imageSrc="https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784575829361-vm9lmmof.jpg" /></div><div className="flex flex-col gap-1 p-3 xl:p-3.5 2xl:p-4"><h3 className="text-2xl font-semibold leading-snug">Building Materials</h3><p className="text-base leading-snug">Timber, boards, door hardware, and heavy-duty chain and wire.</p></div></div></GridOrCarousel></ScrollReveal></div></section></div>
     </>
   );
 }
