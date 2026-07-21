@@ -44,11 +44,11 @@ const testimonials = [
     imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784656894307-18nismk1.jpg"
   },
   {
-    name: "New Resident",
-    role: "Role",
+    name: "Grahams Place",
+    role: "Hotel-Resort",
     company: "Company",
     rating: 5,
-    imageSrc: "https://picsum.photos/seed/2075869184/1200/800"
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784657310154-lqtvnaz9.png"
   }
 ];
 
