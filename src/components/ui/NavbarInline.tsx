@@ -1,4 +1,6 @@
 import Button from "@/components/ui/Button";
+import { Menu, X } from "lucide-react";
+import { useState } from "react";
 
 interface NavbarInlineProps {
   logo: string;
@@ -16,6 +18,8 @@ const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string, on
 };
 
 const NavbarInline = ({ logo, navItems, ctaButton }: NavbarInlineProps) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav data-section="navbar" className="fixed z-1000 top-5 left-1/2 -translate-x-1/2 w-content-width">
       <div className="flex items-center justify-between p-2 xl:p-3 2xl:p-4 rounded backdrop-blur-sm card">
@@ -34,8 +38,33 @@ const NavbarInline = ({ logo, navItems, ctaButton }: NavbarInlineProps) => {
           ))}
         </div>
 
-        <Button text={ctaButton.text} href={ctaButton.href} variant="primary" animate={false} />
+        <div className="hidden md:block">
+          <Button text={ctaButton.text} href={ctaButton.href} variant="primary" animate={false} />
+        </div>
+
+        <button
+          className="md:hidden p-2 text-foreground"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
       </div>
+
+      {isOpen && (
+        <div className="md:hidden absolute top-full left-0 w-full mt-2 p-4 rounded card backdrop-blur-sm flex flex-col gap-4">
+          {navItems.map((item) => (
+            <a
+              key={item.name}
+              href={item.href}
+              onClick={(e) => handleNavClick(e, item.href, () => setIsOpen(false))}
+              className="text-base text-foreground font-medium"
+            >
+              {item.name}
+            </a>
+          ))}
+          <Button text={ctaButton.text} href={ctaButton.href} variant="primary" animate={false} className="w-full justify-center mt-2" />
+        </div>
+      )}
     </nav>
   );
 };
