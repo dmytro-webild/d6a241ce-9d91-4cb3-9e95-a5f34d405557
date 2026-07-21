@@ -17,7 +17,7 @@ const testimonials = [
   },
   {
     name: "Hotel Guanaja del Este",
-    role: "Business",
+    role: "Hotel-Resort",
     company: "Eco‑style hotel",
     rating: 5,
     imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784657458455-k96omc6a.png"
@@ -31,14 +31,14 @@ const testimonials = [
   },
   {
     name: "Fly Fish guanaja",
-    role: "Business",
+    role: "Hotel-Resort",
     company: "Eco‑tourism and hospitality business",
     rating: 5,
     imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784656382248-xcpikcez.webp"
   },
   {
     name: "Clarks cay",
-    role: "Business",
+    role: "Hotel-Resort",
     company: "Boutique private island resort",
     rating: 5,
     imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784656894307-18nismk1.jpg"
@@ -46,7 +46,7 @@ const testimonials = [
   {
     name: "Grahams Place",
     role: "Hotel-Resort",
-    company: "Business",
+    company: "Hotel-Resort",
     rating: 5,
     imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784657310154-lqtvnaz9.png"
   }
