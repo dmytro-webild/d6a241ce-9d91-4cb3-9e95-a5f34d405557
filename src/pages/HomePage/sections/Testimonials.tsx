@@ -20,7 +20,7 @@ const testimonials = [
     role: "Business",
     company: "Eco‑style hotel",
     rating: 5,
-    imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784656710399-ykz6lgow.webp"
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784657458455-k96omc6a.png"
   },
   {
     name: "Jake Ebanks",
