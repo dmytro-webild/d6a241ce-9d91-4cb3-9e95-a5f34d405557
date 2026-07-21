@@ -9,32 +9,29 @@ export default function Layout() {
   const navItems = [
   {
     "name": "Materials",
-    "href": "#materials"
+    "href": "/#materials"
   },
   {
     "name": "Services",
-    "href": "#services"
+    "href": "/#services"
   },
   {
     "name": "FAQ",
-    "href": "#faq"
+    "href": "/#faq"
   },
   {
     "name": "Metrics",
-    "href": "#metrics"
+    "href": "/#metrics"
   },
   {
     "name": "Testimonials",
-    "href": "#testimonials"
+    "href": "/#testimonials"
   },
   {
     "name": "Contact",
-    "href": "#contact"
+    "href": "/contact"
   },
   { name: "Products", href: "/products" },
-
-
-
 ];
 
   return (
@@ -45,7 +42,7 @@ export default function Layout() {
       logo="Constructora Powery"
       ctaButton={{
         text: "Get a Quote",
-        href: "#contact",
+        href: "/contact",
       }}
      navItems={navItems} />
       </SectionErrorBoundary>
