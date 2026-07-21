@@ -31,7 +31,7 @@ const testimonials = [
   },
   {
     name: "Fly Fish guanaja",
-    role: "Company",
+    role: "Business",
     company: "Eco‑tourism and hospitality business",
     rating: 5,
     imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784656382248-xcpikcez.webp"
@@ -46,7 +46,7 @@ const testimonials = [
   {
     name: "Grahams Place",
     role: "Hotel-Resort",
-    company: "Company",
+    company: "Business",
     rating: 5,
     imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784657310154-lqtvnaz9.png"
   }
