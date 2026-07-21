@@ -38,7 +38,7 @@ export default function TestimonialsSection(): React.JSX.Element {
             {
               name: "Fly Fish guanaja",
               role: "Business Owner",
-              company: "Beachfront",
+              company: "Resorts",
               rating: 5,
               imageSrc: "http://img.b2bpic.net/free-photo/aerial-shot-beach-with-waves-from-sea-jungle-maldives_181624-3344.jpg",
             },
