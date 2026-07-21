@@ -46,7 +46,7 @@ const testimonials = [
   {
     name: "Grahams Place",
     role: "",
-    company: "",
+    company: "Eco‑tourism and hospitality ",
     rating: 5,
     imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784657310154-lqtvnaz9.png"
   }
