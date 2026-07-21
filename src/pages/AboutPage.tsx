@@ -1,68 +1,19 @@
-import { routes } from "@/routes";
-import NavbarCentered from "@/components/ui/NavbarCentered";
-import AboutTextSplit from "@/components/sections/about/AboutTextSplit";
-import AboutFeaturesSplit from "@/components/sections/about/AboutFeaturesSplit";
-import ContactCta from "@/components/sections/contact/ContactCta";
-import FooterMinimal from "@/components/sections/footer/FooterMinimal";
+import Button from "@/components/ui/Button";
+import TextAnimation from "@/components/ui/TextAnimation";
+import ImageOrVideo from "@/components/ui/ImageOrVideo";
+import GridOrCarousel from "@/components/ui/GridOrCarousel";
+import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-background text-foreground flex flex-col">
-      <NavbarCentered
-        logo="Powery Ebanks"
-        navItems={routes.map((r) => ({ name: r.label, href: r.path }))}
-        ctaButton={{ text: "Contact Us", href: "/contact" }}
-      />
-      
-      <main className="flex-grow pt-24">
-        <AboutTextSplit
-          title="A Legacy of Trust in the Bay Islands"
-          descriptions={[
-            "For over 15 years, Powery Ebanks has been a trusted family-run company serving Guanaja and the Bay Islands with dedication, integrity, and pride.",
-            "What began as a local venture has grown into a cornerstone of the community, providing essential products and services that support both everyday life and long-term development.",
-            "With a reputation built on experience and trust, we bring technical expertise and a personal touch to every project. At Powery Ebanks, we are more than a company—we are a family committed to strengthening our community, one project at a time."
-          ]}
-          textAnimation="fade-blur"
-        />
-
-        <AboutFeaturesSplit
-          tag="Our Operations"
-          title="Essential Services for Our Community"
-          description="We provide the foundational materials and services needed for growth and daily life in the Bay Islands."
-          items={[
-            {
-              icon: "Hammer",
-              title: "Construction Materials",
-              description: "Supplying high-quality materials that builders and homeowners rely on to bring projects to life."
-            },
-            {
-              icon: "Droplet",
-              title: "Ice Production",
-              description: "Delivering reliable ice services that keep businesses and families cool and refreshed."
-            },
-            {
-              icon: "Map",
-              title: "Constructora Powery",
-              description: "Our specialized branch for professional building, site planning, and land surveys."
-            }
-          ]}
-          imageSrc="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80"
-          textAnimation="slide-up"
-        />
-
-        <ContactCta
-          tag="Work With Us"
-          text="Ready to build the future of our community together?"
-          primaryButton={{ text: "Get in Touch", href: "/contact" }}
-          secondaryButton={{ text: "Learn More", href: "/" }}
-          textAnimation="fade-blur"
-        />
-      </main>
-
-      <FooterMinimal
-        brand="Powery Ebanks"
-        copyright="© 2024 Powery Ebanks. All rights reserved."
-      />
-    </div>
+    <>
+      <div data-webild-section="AboutTextSplit"><section aria-label="About section" className="py-20"><div className="flex flex-col gap-20 mx-auto w-content-width"><div className="flex flex-col md:flex-row gap-3 md:gap-15"><div className="w-full md:w-1/2"><TextAnimation text="A Legacy of Trust in Guanaja" variant="slide-up" gradientText={true} tag="h2" className="text-7xl 2xl:text-8xl leading-[1.15] font-semibold text-balance" /></div><div className="flex flex-col gap-2 w-full md:w-1/2"><TextAnimation key={0} text="For over 15 years, Powery Ebanks has been a trusted family-run company serving Guanaja and the Bay Islands. We provide essential products and services that support everyday life and development." variant="slide-up" gradientText={false} tag="p" className="text-xl md:text-2xl leading-snug text-balance" />
+<TextAnimation key={1} text="Our operations span two key areas. We supply high-quality construction materials for builders, and deliver reliable ice services that keep local businesses and families cool." variant="slide-up" gradientText={false} tag="p" className="text-xl md:text-2xl leading-snug text-balance" />
+<TextAnimation key={2} text="Additionally, Constructora Powery specializes in professional building, site planning, and land surveys. We bring technical expertise and a personal touch to every project." variant="slide-up" gradientText={false} tag="p" className="text-xl md:text-2xl leading-snug text-balance" />
+<TextAnimation key={3} text="At Powery Ebanks, we are more than a company. We are a family committed to strengthening our community, one project at a time." variant="slide-up" gradientText={false} tag="p" className="text-xl md:text-2xl leading-snug text-balance" /><div className="flex flex-wrap gap-3 mt-2 md:mt-3"><Button text="Our Services" href="/services" variant="primary" /><Button text="Contact Us" href="/contact" variant="secondary" animationDelay={0.1} /></div></div></div><div className="w-full border-b border-foreground/5" /></div></section></div>
+      <div data-webild-section="FeaturesMediaCards"><section aria-label="Features section" className="py-20"><div className="flex flex-col gap-8 md:gap-10"><div className="flex flex-col items-center w-content-width mx-auto gap-2"><div className="px-3 py-1 mb-1 text-sm card rounded w-fit"><p>About Us</p></div><TextAnimation text="Over 15 Years of Trusted Service" variant="slide-up" gradientText={true} tag="h2" className="md:max-w-8/10 text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance" /><TextAnimation text="A family-run company serving Guanaja and the Bay Islands with dedication, integrity, and pride." variant="slide-up" gradientText={false} tag="p" className="md:max-w-7/10 text-lg md:text-xl leading-snug text-center text-balance" /><div className="flex flex-wrap justify-center gap-3 mt-2 md:mt-3"><Button variant="primary" /><Button variant="secondary" animationDelay={0.1} /></div></div><ScrollReveal variant="fade"><GridOrCarousel><div key="Construction Materials" className="flex flex-col gap-3 xl:gap-3.5 2xl:gap-4 p-3 xl:p-3.5 2xl:p-4 h-full card rounded"><div className="aspect-square rounded overflow-hidden button-secondary shadow shadow-foreground/5"><ImageOrVideo imageSrc="https://img.freepik.com/free-photo/industrial-building-construction-site_1127-3253.jpg" /></div><div className="flex flex-col gap-1 p-3 xl:p-3.5 2xl:p-4"><h3 className="text-2xl font-semibold leading-snug">Construction Materials</h3><p className="text-base leading-snug">Supplying high-quality materials that builders and homeowners rely on to bring projects to life.</p></div></div>
+<div key="Ice Production" className="flex flex-col gap-3 xl:gap-3.5 2xl:gap-4 p-3 xl:p-3.5 2xl:p-4 h-full card rounded"><div className="aspect-square rounded overflow-hidden button-secondary shadow shadow-foreground/5"><ImageOrVideo imageSrc="https://img.freepik.com/free-photo/ice-cubes-close-up_23-2148222345.jpg" /></div><div className="flex flex-col gap-1 p-3 xl:p-3.5 2xl:p-4"><h3 className="text-2xl font-semibold leading-snug">Ice Production</h3><p className="text-base leading-snug">Delivering reliable ice services that keep businesses and families cool and refreshed.</p></div></div>
+<div key="Building & Land Surveys" className="flex flex-col gap-3 xl:gap-3.5 2xl:gap-4 p-3 xl:p-3.5 2xl:p-4 h-full card rounded"><div className="aspect-square rounded overflow-hidden button-secondary shadow shadow-foreground/5"><ImageOrVideo imageSrc="https://img.freepik.com/free-photo/surveyor-engineer-making-measure-with-partner_1150-14812.jpg" /></div><div className="flex flex-col gap-1 p-3 xl:p-3.5 2xl:p-4"><h3 className="text-2xl font-semibold leading-snug">Building & Land Surveys</h3><p className="text-base leading-snug">Professional building, site planning, and land surveys with technical expertise and a personal touch.</p></div></div></GridOrCarousel></ScrollReveal></div></section></div>
+    </>
   );
 }
