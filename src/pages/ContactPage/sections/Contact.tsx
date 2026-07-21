@@ -98,12 +98,10 @@ export default function ContactSection() {
 
               <button
                 type="submit"
-                disabled={isLoading}
                 className="w-full py-3 mt-2 primary-button rounded font-medium disabled:opacity-70"
               >
-                {isLoading ? "Sending..." : "Send Message"}
+                Send Message
               </button>
-              {error && <p className="text-red-500 text-sm text-center">{error}</p>}
             </form>
           </div>
         </ScrollReveal>
