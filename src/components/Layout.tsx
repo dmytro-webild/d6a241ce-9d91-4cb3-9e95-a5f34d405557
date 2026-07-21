@@ -59,10 +59,26 @@ export default function Layout() {
               label: "Contact",
               href: "#contact",
             },
-
             {
               label: "FAQ",
               href: "#faq",
+            },
+          ],
+        },
+        {
+          title: "Connect",
+          items: [
+            {
+              label: "dmem26@yahoo.com",
+              href: "mailto:dmem26@yahoo.com",
+            },
+            {
+              label: "Facebook",
+              href: "https://facebook.com",
+            },
+            {
+              label: "Instagram",
+              href: "https://instagram.com",
             },
           ],
         },
