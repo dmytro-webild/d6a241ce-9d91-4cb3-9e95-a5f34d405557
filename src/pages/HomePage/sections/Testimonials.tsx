@@ -19,7 +19,7 @@ export default function TestimonialsSection(): React.JSX.Element {
               role: "Hotel",
               company: "Eco‑tourism and hospitality business",
               rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/portrait-smiling-male-carpenter-leaning-workbench_23-2147944946.jpg",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784656555315-5yajanq0.webp",
             },
             {
               name: "David M.",
