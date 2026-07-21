@@ -16,7 +16,7 @@ export default function ContactSection(): React.JSX.Element {
             text: "Start Now",
             href: "/contact",
           }}
-        secondaryButton={{"href":"tel:+50495070946","text":"Call +504 95070946"}}
+        secondaryButton={{"href":"tel:+50495070946","text":""}}
         textAnimation="slide-up"
       />
         </SectionErrorBoundary>
