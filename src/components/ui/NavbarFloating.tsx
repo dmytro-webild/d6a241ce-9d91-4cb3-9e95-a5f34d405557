@@ -64,7 +64,7 @@ const NavbarFloating = ({ logo, navItems, ctaButton }: NavbarFloatingProps) => {
       </AnimatePresence>
 
       <nav data-section="navbar" className="fixed z-1000 top-5 left-1/2 -translate-x-1/2 w-content-width">
-        <div className="mx-auto w-full md:w-1/2 overflow-hidden rounded backdrop-blur-sm card">
+        <div className={cls("mx-auto w-full md:w-1/2 overflow-hidden rounded backdrop-blur-sm", location.pathname === "/about" ? "bg-transparent" : "card")}>
           <div className="relative z-10 flex items-center justify-between gap-3 xl:gap-4 2xl:gap-5 p-3 xl:p-4 2xl:p-5">
             <a href="/" className="text-xl font-medium text-foreground">{logo}</a>
 
