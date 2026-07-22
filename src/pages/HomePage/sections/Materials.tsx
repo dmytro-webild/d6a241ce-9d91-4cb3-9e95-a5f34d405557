@@ -46,7 +46,7 @@ const items = [
   {
     title: "Daily Essentials",
     description: "Including ice and basic supplies.",
-    imageSrc: "http://img.b2bpic.net/free-photo/close-up-construction-safety-goggles-blurred-background_169016-17032.jpg",
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784734769532-5mmjw7g8.jpg",
     bullets: ["Ice & Cold Storage Packs", "Drinking Water & Beverage", "Snacks & Packaged Food", "Cleaning Products & Detergents", "Basic Household Goods"]
   },
   {
