@@ -47,7 +47,7 @@ const items = [
     title: "Daily Essentials",
     description: "Including ice and basic supplies.",
     imageSrc: "http://img.b2bpic.net/free-photo/close-up-construction-safety-goggles-blurred-background_169016-17032.jpg",
-    bullets: ["• • Work Gloves", "Safety Glasses", "Dust Masks", "Heavy Duty Trash Bags", "Bottled Water & Ice"]
+    bullets: ["•  Work Gloves", "Safety Glasses", "Dust Masks", "Heavy Duty Trash Bags", "Bottled Water & Ice"]
   },
   {
     title: "Marine Supply",
