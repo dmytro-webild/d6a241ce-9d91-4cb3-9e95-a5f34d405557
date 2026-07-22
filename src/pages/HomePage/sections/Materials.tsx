@@ -4,48 +4,49 @@ import Button from "@/components/ui/Button";
 import TextAnimation from "@/components/ui/TextAnimation";
 import ImageOrVideo from "@/components/ui/ImageOrVideo";
 import ScrollReveal from "@/components/ui/ScrollReveal";
+import Carousel from "@/components/ui/Carousel";
 import { cls } from "@/lib/utils";
 
 const items = [
   {
     title: "Premium Lumber",
     description: "Treated wood for lasting structures.",
-    imageSrc: "http://img.b2bpic.net/free-photo/brown-closeup-wooden-texture-macro_1122-1778.jpg"
+    images: ["http://img.b2bpic.net/free-photo/brown-closeup-wooden-texture-macro_1122-1778.jpg", "http://img.b2bpic.net/free-photo/brown-closeup-wooden-texture-macro_1122-1778.jpg"]
   },
   {
     title: "Concrete & Aggregates",
     description: "Sand, gravel, and high-strength concrete.",
-    imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784645129490-cx7jmuje.avif"
+    images: ["https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784645129490-cx7jmuje.avif", "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784645129490-cx7jmuje.avif"]
   },
   {
     title: "Roofing Systems",
     description: "Weather-resistant, durable roofing solutions.",
-    imageSrc: "http://img.b2bpic.net/free-photo/modern-new-painted-metal-surface_23-2148394678.jpg"
+    images: ["http://img.b2bpic.net/free-photo/modern-new-painted-metal-surface_23-2148394678.jpg", "http://img.b2bpic.net/free-photo/modern-new-painted-metal-surface_23-2148394678.jpg"]
   },
   {
     title: "Hardware Tools",
     description: "Every tool you need for the job.",
-    imageSrc: "http://img.b2bpic.net/free-photo/workshop-with-different-implements_23-2148180525.jpg"
+    images: ["http://img.b2bpic.net/free-photo/workshop-with-different-implements_23-2148180525.jpg", "http://img.b2bpic.net/free-photo/workshop-with-different-implements_23-2148180525.jpg"]
   },
   {
     title: "Construction Services",
     description: "Full-cycle build and management.",
-    imageSrc: "http://img.b2bpic.net/free-photo/full-shot-roofers-working-together-with-helmets_23-2149343707.jpg"
+    images: ["http://img.b2bpic.net/free-photo/full-shot-roofers-working-together-with-helmets_23-2149343707.jpg", "http://img.b2bpic.net/free-photo/full-shot-roofers-working-together-with-helmets_23-2149343707.jpg"]
   },
   {
     title: "Paints & Sealants",
     description: "Island-grade weather protection.",
-    imageSrc: "http://img.b2bpic.net/free-photo/old-fence-s-renovaiting-process-by-worker-he-apply-brown-paint-with-brush-wearing-protective-gloves_613910-17110.jpg"
+    images: ["http://img.b2bpic.net/free-photo/old-fence-s-renovaiting-process-by-worker-he-apply-brown-paint-with-brush-wearing-protective-gloves_613910-17110.jpg", "http://img.b2bpic.net/free-photo/old-fence-s-renovaiting-process-by-worker-he-apply-brown-paint-with-brush-wearing-protective-gloves_613910-17110.jpg"]
   },
   {
     title: "Daily Essentials",
     description: "Including ice and basic supplies.",
-    imageSrc: "http://img.b2bpic.net/free-photo/close-up-construction-safety-goggles-blurred-background_169016-17032.jpg"
+    images: ["http://img.b2bpic.net/free-photo/close-up-construction-safety-goggles-blurred-background_169016-17032.jpg", "http://img.b2bpic.net/free-photo/close-up-construction-safety-goggles-blurred-background_169016-17032.jpg"]
   },
   {
     title: "Marine Supply",
     description: "Quality gear for marine construction and maintenance.",
-    imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784729440252-hp39wszy.jpg"
+    images: ["https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784729440252-hp39wszy.jpg", "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784729440252-hp39wszy.jpg"]
   }
 ];
 
@@ -124,13 +125,17 @@ const MaterialsInline = () => {
           {items.map((item, index) => {
             const content = (
               <div className="relative h-80 xl:h-100 2xl:h-120 overflow-hidden">
-                <ImageOrVideo
-                  imageSrc={item.imageSrc}
-                  videoSrc={item.videoSrc}
-                  className="rounded group-hover:scale-105 transition-transform duration-500"
-                />
+                <Carousel className="h-full w-full" itemClassName="h-full w-full">
+                  {item.images.map((src, i) => (
+                    <ImageOrVideo
+                      key={i}
+                      imageSrc={src}
+                      className="h-full w-full object-cover rounded group-hover:scale-105 transition-transform duration-500"
+                    />
+                  ))}
+                </Carousel>
 
-                <div className="absolute inset-x-5 bottom-5 xl:inset-x-6 xl:bottom-6 2xl:inset-x-7 2xl:bottom-7 flex flex-col text-background">
+                <div className="absolute inset-x-5 bottom-5 xl:inset-x-6 xl:bottom-6 2xl:inset-x-7 2xl:bottom-7 flex flex-col text-background pointer-events-none">
                   <span className="text-2xl font-semibold leading-snug truncate">{item.title}</span>
                   <span className="text-base leading-snug truncate">{item.description}</span>
                 </div>
