@@ -133,6 +133,13 @@ const MaterialsInline = () => {
                 <div className="absolute inset-x-5 bottom-5 xl:inset-x-6 xl:bottom-6 2xl:inset-x-7 2xl:bottom-7 flex flex-col text-background">
                   <span className="text-2xl font-semibold leading-snug truncate">{item.title}</span>
                   <span className="text-base leading-snug truncate">{item.description}</span>
+                  <div className="flex flex-col mt-2 space-y-0.5">
+                    <span className="text-sm opacity-90 truncate">• Additional detail 1</span>
+                    <span className="text-sm opacity-90 truncate">• Additional detail 2</span>
+                    <span className="text-sm opacity-90 truncate">• Additional detail 3</span>
+                    <span className="text-sm opacity-90 truncate">• Additional detail 4</span>
+                    <span className="text-sm opacity-90 truncate">• Additional detail 5</span>
+                  </div>
                 </div>
               </div>
             );
