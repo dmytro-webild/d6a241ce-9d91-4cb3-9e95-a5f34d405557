@@ -45,7 +45,7 @@ const items = [
   {
     title: "Marine Supply",
     description: "Quality gear for marine construction and maintenance.",
-    imageSrc: "https://picsum.photos/seed/2009553529/1200/800"
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784729440252-hp39wszy.jpg"
   }
 ];
 
