@@ -16,24 +16,47 @@ const secondaryButton = {
 const ContactInline = () => {
   return (
     <section aria-label="Contact section" className="py-20">
-      <div className="w-content-width mx-auto">
+      <div className="w-content-width mx-auto max-w-3xl">
         <ScrollReveal variant="fade-blur">
-          <div className="flex flex-col items-center gap-8 md:gap-10 py-20 px-8 rounded card">
-            <div className="flex flex-col items-center gap-2">
-              <div className="px-3 py-1 mb-1 text-sm card rounded w-fit">
-                <p>{"Ready to build?"}</p>
+          <div className="p-6 md:p-10 card rounded">
+            <div className="flex flex-col gap-6">
+              <div className="flex flex-col items-center gap-2 text-center">
+                <div className="px-3 py-1 mb-1 text-sm card rounded w-fit">
+                  <p>Get in Touch</p>
+                </div>
+                <TextAnimation
+                  text="Let's Connect & Build Together"
+                  variant="fade-blur"
+                  gradientText={true}
+                  tag="h2"
+                  className="text-4xl md:text-5xl leading-[1.15] font-semibold text-balance"
+                />
+                <TextAnimation
+                  text="Have a project vision or material inquiry? Select an option below to chat directly with our team on WhatsApp—we'd love to hear from you!"
+                  variant="fade-blur"
+                  gradientText={false}
+                  tag="p"
+                  className="text-lg md:text-xl leading-snug text-balance mt-2"
+                />
               </div>
 
-              <TextAnimation
-                text={"Start your next project with Guanaja's most trusted partner. Get your material estimate or book your construction consultation today."}
-                variant={"slide-up"}
-                gradientText={true}
-                tag="h2"
-                className="md:max-w-8/10 text-5xl 2xl:text-6xl leading-[1.15] font-semibold text-center text-balance"
-              />
-
-              <div className="flex flex-wrap justify-center gap-3 mt-2 md:mt-3">
-                <Button text={primaryButton.text} href={primaryButton.href} variant="primary" />
+              <div className="flex flex-col sm:flex-row gap-4 mt-6 w-full justify-center">
+                <a
+                  href="https://wa.me/50495804593"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-1/2 py-3 bg-[#25D366] hover:bg-[#20b858] text-white rounded font-medium text-center transition-colors flex items-center justify-center gap-2"
+                >
+                  Project Consultations
+                </a>
+                <a
+                  href="https://wa.me/50497152117"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-1/2 py-3 bg-[#25D366] hover:bg-[#20b858] text-white rounded font-medium text-center transition-colors flex items-center justify-center gap-2"
+                >
+                  Materials & General Inquiries
+                </a>
               </div>
             </div>
           </div>
