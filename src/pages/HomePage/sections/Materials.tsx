@@ -23,7 +23,7 @@ const items = [
     title: "Roofing Systems",
     description: "Weather-resistant, durable roofing solutions.",
     imageSrc: "http://img.b2bpic.net/free-photo/modern-new-painted-metal-surface_23-2148394678.jpg",
-    bullets: ["• • Corrugated Metal, Pvc, Pvc", "Asphalt Shingles", "Roofing Felt", "Flashing & Trim", "Roof Sealants"]
+    bullets: ["• Corrugated Metal, Pvc, Pvc", "Asphalt Shingles", "Roofing Felt", "Flashing & Trim", "Roof Sealants"]
   },
   {
     title: "Hardware Tools",
