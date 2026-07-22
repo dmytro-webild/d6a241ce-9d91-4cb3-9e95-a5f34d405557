@@ -11,7 +11,7 @@ const items = [
     title: "Premium Lumber",
     description: "Treated wood for lasting structures.",
     imageSrc: "http://img.b2bpic.net/free-photo/brown-closeup-wooden-texture-macro_1122-1778.jpg",
-    bullets: ["• Pine Wood", "Basic Household Goods", "Cleaning Products & Detergents", "PVC Pipes & Fittings", "Rebar & Wire Mesh"]
+    bullets: ["• Pine Wood", "• Marine PlayWood", "• PlayWood", "• Panelit", "• Framing Lumber"]
   },
   {
     title: "Concrete & Aggregates",
