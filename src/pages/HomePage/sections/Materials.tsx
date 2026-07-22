@@ -139,15 +139,17 @@ const MaterialsInline = () => {
                 />
 
                 <div className="absolute inset-x-5 bottom-5 xl:inset-x-6 xl:bottom-6 2xl:inset-x-7 2xl:bottom-7 flex flex-col text-background">
-                  <span className="text-2xl font-semibold leading-snug truncate">{item.title}</span>
-                  <span className="text-base leading-snug truncate">{item.description}</span>
-                  {item.bullets && item.bullets.length > 0 && (
-                    <div className="flex flex-col mt-2 space-y-0.5">
-                      {item.bullets.map((bullet, i) => (
-                        <span key={i} className="text-sm opacity-90 truncate">{i === 0 ? bullet : `• ${bullet}`}</span>
-                      ))}
-                    </div>
-                  )}
+                  <div className="relative z-10 p-4 rounded-xl backdrop-blur-md bg-black/30 border border-white/10">
+                    <span className="text-2xl font-semibold leading-snug truncate">{item.title}</span>
+                    <span className="text-base leading-snug truncate">{item.description}</span>
+                    {item.bullets && item.bullets.length > 0 && (
+                      <div className="flex flex-col mt-2 space-y-0.5">
+                        {item.bullets.map((bullet, i) => (
+                          <span key={i} className="text-sm opacity-90 truncate">{i === 0 ? bullet : `• ${bullet}`}</span>
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 </div>
               </div>
             );
