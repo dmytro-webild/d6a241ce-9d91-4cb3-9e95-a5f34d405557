@@ -10,42 +10,50 @@ const items = [
   {
     title: "Premium Lumber",
     description: "Treated wood for lasting structures.",
-    imageSrc: "http://img.b2bpic.net/free-photo/brown-closeup-wooden-texture-macro_1122-1778.jpg"
+    imageSrc: "http://img.b2bpic.net/free-photo/brown-closeup-wooden-texture-macro_1122-1778.jpg",
+    bullets: ["Fasteners & Hardware", "Basic Household Goods", "Cleaning Products & Detergents", "PVC Pipes & Fittings", "Rebar & Wire Mesh"]
   },
   {
     title: "Concrete & Aggregates",
     description: "Sand, gravel, and high-strength concrete.",
-    imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784645129490-cx7jmuje.avif"
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784645129490-cx7jmuje.avif",
+    bullets: ["Portland Cement", "Fine Sand", "Coarse Gravel", "Ready-Mix Bags", "Concrete Blocks"]
   },
   {
     title: "Roofing Systems",
     description: "Weather-resistant, durable roofing solutions.",
-    imageSrc: "http://img.b2bpic.net/free-photo/modern-new-painted-metal-surface_23-2148394678.jpg"
+    imageSrc: "http://img.b2bpic.net/free-photo/modern-new-painted-metal-surface_23-2148394678.jpg",
+    bullets: ["Corrugated Metal", "Asphalt Shingles", "Roofing Felt", "Flashing & Trim", "Roof Sealants"]
   },
   {
     title: "Hardware Tools",
     description: "Every tool you need for the job.",
-    imageSrc: "http://img.b2bpic.net/free-photo/workshop-with-different-implements_23-2148180525.jpg"
+    imageSrc: "http://img.b2bpic.net/free-photo/workshop-with-different-implements_23-2148180525.jpg",
+    bullets: ["Power Drills", "Hand Saws", "Hammers & Mallets", "Measuring Tapes", "Wrenches & Pliers"]
   },
   {
     title: "Construction Services",
     description: "Full-cycle build and management.",
-    imageSrc: "http://img.b2bpic.net/free-photo/full-shot-roofers-working-together-with-helmets_23-2149343707.jpg"
+    imageSrc: "http://img.b2bpic.net/free-photo/full-shot-roofers-working-together-with-helmets_23-2149343707.jpg",
+    bullets: ["Project Planning", "Site Preparation", "Foundation Work", "Framing & Roofing", "Finishing Touches"]
   },
   {
     title: "Paints & Sealants",
     description: "Island-grade weather protection.",
-    imageSrc: "http://img.b2bpic.net/free-photo/old-fence-s-renovaiting-process-by-worker-he-apply-brown-paint-with-brush-wearing-protective-gloves_613910-17110.jpg"
+    imageSrc: "http://img.b2bpic.net/free-photo/old-fence-s-renovaiting-process-by-worker-he-apply-brown-paint-with-brush-wearing-protective-gloves_613910-17110.jpg",
+    bullets: ["Exterior Paint", "Interior Primer", "Waterproofing", "Wood Stains", "Caulking Tubes"]
   },
   {
     title: "Daily Essentials",
     description: "Including ice and basic supplies.",
-    imageSrc: "http://img.b2bpic.net/free-photo/close-up-construction-safety-goggles-blurred-background_169016-17032.jpg"
+    imageSrc: "http://img.b2bpic.net/free-photo/close-up-construction-safety-goggles-blurred-background_169016-17032.jpg",
+    bullets: ["Work Gloves", "Safety Glasses", "Dust Masks", "Heavy Duty Trash Bags", "Bottled Water & Ice"]
   },
   {
     title: "Marine Supply",
     description: "Quality gear for marine construction and maintenance.",
-    imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784729440252-hp39wszy.jpg"
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784729440252-hp39wszy.jpg",
+    bullets: ["Marine Grade Plywood", "Stainless Fasteners", "Boat Paint", "Dock Cleats", "Mooring Lines"]
   }
 ];
 
@@ -133,13 +141,13 @@ const MaterialsInline = () => {
                 <div className="absolute inset-x-5 bottom-5 xl:inset-x-6 xl:bottom-6 2xl:inset-x-7 2xl:bottom-7 flex flex-col text-background">
                   <span className="text-2xl font-semibold leading-snug truncate">{item.title}</span>
                   <span className="text-base leading-snug truncate">{item.description}</span>
-                  <div className="flex flex-col mt-2 space-y-0.5">
-                    <span className="text-sm opacity-90 truncate">Fasteners &amp; Hardware </span>
-                    <span className="text-sm opacity-90 truncate">• Basic Household Goods</span>
-                    <span className="text-sm opacity-90 truncate">• Cleaning Products &amp; Detergents</span>
-                    <span className="text-sm opacity-90 truncate">• PVC Pipes &amp; Fittings</span>
-                    <span className="text-sm opacity-90 truncate">• Rebar &amp; Wire Mesh</span>
-                  </div>
+                  {item.bullets && item.bullets.length > 0 && (
+                    <div className="flex flex-col mt-2 space-y-0.5">
+                      {item.bullets.map((bullet, i) => (
+                        <span key={i} className="text-sm opacity-90 truncate">{i === 0 ? bullet : `• ${bullet}`}</span>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             );
