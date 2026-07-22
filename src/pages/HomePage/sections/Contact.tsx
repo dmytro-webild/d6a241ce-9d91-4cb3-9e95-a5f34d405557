@@ -41,22 +41,28 @@ const ContactInline = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 mt-6 w-full justify-center">
-                <a
-                  href="https://wa.me/50495804593"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full sm:w-1/2 py-3 bg-[#25D366] hover:bg-[#20b858] text-white rounded font-medium text-center transition-colors flex items-center justify-center gap-2"
-                >
-                  Project Consultations
-                </a>
-                <a
-                  href="https://wa.me/50497152117"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full sm:w-1/2 py-3 bg-[#25D366] hover:bg-[#20b858] text-white rounded font-medium text-center transition-colors flex items-center justify-center gap-2"
-                >
-                  Materials & General Inquiries
-                </a>
+                <div className="w-full sm:w-1/2 flex flex-col items-center gap-2">
+                  <a
+                    href="https://wa.me/50495804593"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full py-3 bg-[#25D366] hover:bg-[#20b858] text-white rounded font-medium text-center transition-colors flex items-center justify-center gap-2"
+                  >
+                    Project Consultations
+                  </a>
+                  <span className="text-sm text-accent">+504 9580-4593</span>
+                </div>
+                <div className="w-full sm:w-1/2 flex flex-col items-center gap-2">
+                  <a
+                    href="https://wa.me/50497152117"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full py-3 bg-[#25D366] hover:bg-[#20b858] text-white rounded font-medium text-center transition-colors flex items-center justify-center gap-2"
+                  >
+                    Materials & General Inquiries
+                  </a>
+                  <span className="text-sm text-accent">+504 9715-2117</span>
+                </div>
               </div>
             </div>
           </div>
