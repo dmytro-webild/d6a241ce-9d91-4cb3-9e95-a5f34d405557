@@ -138,7 +138,7 @@ const MaterialsInline = () => {
                   className="rounded group-hover:scale-105 transition-transform duration-500"
                 />
 
-                <div className="absolute inset-x-5 bottom-5 xl:inset-x-6 xl:bottom-6 2xl:inset-x-7 2xl:bottom-7 flex flex-col text-background">
+                <div className="absolute inset-x-5 bottom-5 xl:inset-x-6 xl:bottom-6 2xl:inset-x-7 2xl:bottom-7 flex flex-col text-background backdrop-blur-md bg-black/20 p-4 rounded-xl">
                   <span className="text-2xl font-semibold leading-snug truncate">{item.title}</span>
                   <span className="text-base leading-snug truncate">{item.description}</span>
                   {item.bullets && item.bullets.length > 0 && (
