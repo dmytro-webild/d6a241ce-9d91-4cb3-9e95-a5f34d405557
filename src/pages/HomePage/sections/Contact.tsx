@@ -50,7 +50,7 @@ const ContactInline = () => {
                   >
                     Project Consultations
                   </a>
-                  <span className="text-sm text-accent">Project Consultations</span>
+                  <span className="text-sm text-accent">+504 9580-4593</span>
                 </div>
                 <div className="w-full sm:w-1/2 flex flex-col items-center gap-2">
                   <a
@@ -61,7 +61,7 @@ const ContactInline = () => {
                   >
                     Materials & General Inquiries
                   </a>
-                  <span className="text-sm text-accent">Materials &amp; General Inquiries</span>
+                  <span className="text-sm text-accent">+504 9715-2117</span>
                 </div>
               </div>
             </div>
