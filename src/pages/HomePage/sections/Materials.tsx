@@ -41,6 +41,11 @@ const items = [
     title: "Daily Essentials",
     description: "Including ice and basic supplies.",
     imageSrc: "http://img.b2bpic.net/free-photo/close-up-construction-safety-goggles-blurred-background_169016-17032.jpg"
+  },
+  {
+    title: "Marine Supply",
+    description: "Quality gear for marine construction and maintenance.",
+    imageSrc: "https://picsum.photos/seed/2009553529/1200/800"
   }
 ];
 
@@ -56,7 +61,7 @@ interface FeaturesImageBentoProps {
   description: string;
   primaryButton?: { text: string; href: string };
   secondaryButton?: { text: string; href: string };
-  items: [FeatureItem, FeatureItem, FeatureItem, FeatureItem, FeatureItem, FeatureItem, FeatureItem];
+  items: FeatureItem[];
   textAnimation: "slide-up" | "fade-blur" | "fade";
 }
 
@@ -66,9 +71,10 @@ const MaterialsInline = () => {
     "md:col-span-4",
     "md:col-span-3",
     "md:col-span-3",
-    "md:col-span-2",
-    "md:col-span-2",
-    "md:col-span-2",
+    "md:col-span-3",
+    "md:col-span-3",
+    "md:col-span-3",
+    "md:col-span-3",
   ];
 
   const staggerDelays = [
@@ -78,7 +84,8 @@ const MaterialsInline = () => {
     0.1,
     0,
     0.1,
-    0.2,
+    0,
+    0.1,
   ];
 
   return (
