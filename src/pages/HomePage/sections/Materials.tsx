@@ -11,49 +11,49 @@ const items = [
     title: "Premium Lumber",
     description: "Treated wood for lasting structures.",
     imageSrc: "http://img.b2bpic.net/free-photo/brown-closeup-wooden-texture-macro_1122-1778.jpg",
-    bullets: ["• Pine Wood", "• Marine PlayWood", "• PlayWood", "• Panelit", "• Framing Lumber"]
+    bullets: ["Pine Wood", "Marine PlayWood", "PlayWood", "Panelit", "Framing Lumber"]
   },
   {
     title: "Concrete & Aggregates",
     description: "Sand, gravel, and high-strength concrete.",
     imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784645129490-cx7jmuje.avif",
-    bullets: ["• Portland Cement", "Fine Sand", "Coarse Gravel", "Ready-Mix Bags", "Concrete Blocks"]
+    bullets: ["Portland Cement", "Fine Sand", "Coarse Gravel", "Ready-Mix Bags", "Concrete Blocks"]
   },
   {
     title: "Roofing Systems",
     description: "Weather-resistant, durable roofing solutions.",
     imageSrc: "http://img.b2bpic.net/free-photo/modern-new-painted-metal-surface_23-2148394678.jpg",
-    bullets: ["• Corrugated Metal, Pvc, Pvc", "Asphalt Shingles", "Roofing Felt", "Flashing & Trim", "Roof Sealants"]
+    bullets: ["Corrugated Metal, Pvc, Pvc", "Asphalt Shingles", "Roofing Felt", "Flashing & Trim", "Roof Sealants"]
   },
   {
     title: "Hardware Tools",
     description: "Every tool you need for the job.",
     imageSrc: "http://img.b2bpic.net/free-photo/workshop-with-different-implements_23-2148180525.jpg",
-    bullets: ["• Power Drills", "Hand Saws", "Hammers & Mallets", "Measuring Tapes", "Wrenches & Pliers"]
+    bullets: ["Power Drills", "Hand Saws", "Hammers & Mallets", "Measuring Tapes", "Wrenches & Pliers"]
   },
   {
     title: "Construction Services",
     description: "Full-cycle build and management.",
     imageSrc: "http://img.b2bpic.net/free-photo/full-shot-roofers-working-together-with-helmets_23-2149343707.jpg",
-    bullets: ["•  Project Planning", "Site Preparation", "Foundation Work", "Framing & Roofing", "Finishing Touches"]
+    bullets: ["Project Planning", "Site Preparation", "Foundation Work", "Framing & Roofing", "Finishing Touches"]
   },
   {
     title: "Paints & Sealants",
     description: "Island-grade weather protection.",
     imageSrc: "http://img.b2bpic.net/free-photo/old-fence-s-renovaiting-process-by-worker-he-apply-brown-paint-with-brush-wearing-protective-gloves_613910-17110.jpg",
-    bullets: ["• Exterior Paint", "Interior Primer", "Waterproofing", "Wood Stains", "Caulking Tubes"]
+    bullets: ["Exterior Paint", "Interior Primer", "Waterproofing", "Wood Stains", "Caulking Tubes"]
   },
   {
     title: "Daily Essentials",
     description: "Including ice and basic supplies.",
     imageSrc: "http://img.b2bpic.net/free-photo/close-up-construction-safety-goggles-blurred-background_169016-17032.jpg",
-    bullets: ["•  Work Gloves", "Safety Glasses", "Dust Masks", "Heavy Duty Trash Bags", "Bottled Water & Ice"]
+    bullets: ["Work Gloves", "Safety Glasses", "Dust Masks", "Heavy Duty Trash Bags", "Bottled Water & Ice"]
   },
   {
     title: "Marine Supply",
     description: "Quality gear for marine construction and maintenance.",
     imageSrc: "https://storage.googleapis.com/webild/users/user_3FvS6fUSGcZ0ltOmklw1moE7HZg/uploaded-1784729440252-hp39wszy.jpg",
-    bullets: ["• Boat Pumps (Bilge & Freshwater)  ", "Stainless Fasteners", "Boat Paint", "Dock Cleats", "Mooring Lines"]
+    bullets: ["Boat Pumps (Bilge & Freshwater)", "Stainless Fasteners", "Boat Paint", "Dock Cleats", "Mooring Lines"]
   }
 ];
 
