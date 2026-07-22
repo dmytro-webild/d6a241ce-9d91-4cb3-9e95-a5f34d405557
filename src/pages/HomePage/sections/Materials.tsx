@@ -134,11 +134,11 @@ const MaterialsInline = () => {
                   <span className="text-2xl font-semibold leading-snug truncate">{item.title}</span>
                   <span className="text-base leading-snug truncate">{item.description}</span>
                   <div className="flex flex-col mt-2 space-y-0.5">
-                    <span className="text-sm opacity-90 truncate">• Additional detail 1</span>
-                    <span className="text-sm opacity-90 truncate">• Additional detail 2</span>
-                    <span className="text-sm opacity-90 truncate">• Additional detail 3</span>
-                    <span className="text-sm opacity-90 truncate">• Additional detail 4</span>
-                    <span className="text-sm opacity-90 truncate">• Additional detail 5</span>
+                    <span className="text-sm opacity-90 truncate">• Stainless Steel Hooks &amp; Shackles  </span>
+                    <span className="text-sm opacity-90 truncate">• Boat Pumps (Bilge &amp; Freshwater)  </span>
+                    <span className="text-sm opacity-90 truncate">• Marine Ropes &amp; Lines  </span>
+                    <span className="text-sm opacity-90 truncate">• Fuel &amp; Water Hoses with Clamps  </span>
+                    <span className="text-sm opacity-90 truncate">• Navigation &amp; Safety Gear  </span>
                   </div>
                 </div>
               </div>
